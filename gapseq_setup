@@ -30,3 +30,8 @@ src/./update_sequences.sh
 # Optional step to test whether all packages and dependencies are working correctly:
 # ./gapseq test
 # gapseq has not been tested with R-Versions older than 3.6.3, authors recommended versions 4.0.0 or later.
+
+# If using the Matlab COBRA package then the following changes will need to be made to the getDataBases.m function:
+# Replace:    tokens = cellfun(@(x) regexp(x,'https?://identifiers\.org/([^/]*)/(.*)','tokens'),Ressources);
+# With:       tokens = cellfun(@(x) regexp(x,'https?://identifiers\.org/([^:/]*)[/:](.*)','tokens'),Ressources);
+# I flagged this issue to the COBRA toolbox developers and they have opened a pull request to address this.    
