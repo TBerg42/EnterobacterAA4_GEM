@@ -23,5 +23,6 @@ def AuReMe_ChangeModelFormat(InputModel,OutputName):
     # Handle error somehow.
     print('Error: conversion failed due to the following:')
     document.printErrors()
-    
+   
+   # Write changed model as the provided output name 
    writeSBML(document,'OutputName')
