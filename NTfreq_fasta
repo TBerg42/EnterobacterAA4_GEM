@@ -1,6 +1,6 @@
 def NTfreq_fasta(input_file,check_NT=True,each_Gene=False):
   '''
-  The freq_fasta function takes in a FASTA file and returns a graph showing the frequency of each nucleotide within that file.
+  The NTfreq_fasta function takes in a FASTA file and returns a graph showing the frequency of each nucleotide within that file.
   It can also check whether the sequences are in valid format and show the results for each specific gene in the file.
 
   Parameters
